@@ -15,6 +15,9 @@ var radios = document.querySelectorAll('input[type=radio][name="solvefor"]');
 radios.forEach(radio => radio.addEventListener('change', () => {
     if(radio.value=='pressure'){
         Pressure.disabled=true;
+        Volume.disabled=false;
+        Moles.disabled=false;
+        Temp.disabled=false;
         document.getElementById('pa').disabled=true;
         document.getElementById('atm').disabled=true;
         document.getElementById('bar').disabled=true;
