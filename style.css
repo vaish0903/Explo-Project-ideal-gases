@@ -96,3 +96,25 @@ button {
     text-align: center;
     margin: 12px;
   }
+
+#link a{
+    color: rgb(255, 255, 255);
+  }
+  #link h1{
+    text-align: center;
+    margin: 12px;
+    margin-top: 0;
+    color: rgb(45, 46, 48);
+  }
+  #quiz{
+    border: 2px solid rgb(22, 22, 22);
+    margin: 30px 540px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  #quiz:hover{
+    background-color: rgb(100, 94, 94);
+  }
+  #link{
+    background-color: rgb(186, 223, 238);
+  }
