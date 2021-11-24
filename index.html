@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideal Gas</title>
     <link href="style.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Barlow:wght@100&display=swap"
-    rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Barlow:wght@100&family=Bellefair&family=Manjari:wght@100&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="images/icons/icons8-chemistry-49.png" type="image">    
  </head>
 <body>
@@ -206,20 +204,20 @@
                         <tr >
                             <td>P: &nbsp;</td>
                             <td><input type="text" name="pressure_value" size="10" id="Pressure"/></td>
-                            <td><input type="radio" value="Pa" name="pressurein" id="pa"/>Pa
-                                <input type="radio" value="atm" name="pressurein" id="atm"/>atm
-                                <input type="radio" value="bar" name="pressurein" id="bar"/>bar
-                                <input type="radio" value="mmHg" name="pressurein" id="mmhg"/>mm Hg
+                            <td><input type="radio" class="units" value="Pa" name="pressurein" id="pa"/>Pa
+                                <input type="radio" class="units" value="atm" name="pressurein" id="atm"/>atm
+                                <input type="radio" class="units" value="bar" name="pressurein" id="bar"/>bar
+                                <input type="radio" class="units" value="mmHg" name="pressurein" id="mmhg"/>mm Hg
                                 
                             </td>
                             </tr>
                         <tr >
                             <td>V: &nbsp;</td>
                             <td><input type="text" name="volume_value" size="10" id="Volume"/></td>
-                            <td ><input type="radio" value="m^3" name="volumein" id="m"/>m<sup>3</sup>
-                                <input type="radio" value="cm^3" name="volumein" id="cm"/>cm<sup>3</sup>
-                                <input type="radio" value="L" name="volumein" id="l"/>L
-                                <input type="radio" value="ft^3" name="volumein" id="ft"/>ft<sup>3</sup>
+                            <td ><input type="radio" class="units" value="m^3" name="volumein" id="m"/>m<sup>3</sup>
+                                <input type="radio" class="units" value="cm^3" name="volumein" id="cm"/>cm<sup>3</sup>
+                                <input type="radio" class="units" value="L" name="volumein" id="l"/>L
+                                <input type="radio" class="units" value="ft^3" name="volumein" id="ft"/>ft<sup>3</sup>
                             </td>
                         </tr>
                         <tr >
@@ -231,10 +229,10 @@
                             <td>T: &nbsp;</td>
                             <td><input type="text" name="temperature_value" size="10" id="Temp"></td>
                             <td >
-                                <input type="radio" value="C" name="temperaturein" id="C"/>&#176; C
-                                <input type="radio" value="F" name="temperaturein" id="F"/>&#176; F
-                                <input type="radio" value="K" name="temperaturein" id="K"/>K
-                                <input type="radio" value="R" name="temperaturein" id="R"/>&#176; R
+                                <input type="radio" class="units" value="C" name="temperaturein" id="C"/>&#176; C
+                                <input type="radio" class="units" value="F" name="temperaturein" id="F"/>&#176; F
+                                <input type="radio" class="units" value="K" name="temperaturein" id="K"/>K
+                                <input type="radio" class="units" value="R" name="temperaturein" id="R"/>&#176; R
                             </td>
                         </tr>
                         </div>
@@ -252,13 +250,14 @@
         </tr>
     </table>
  </div>
- 
+
  <div id="link">
      <h1>Check your Knowledge<span><i class="far fa-question-circle"></i></span></h1>
      <button id="quiz"><a href="http://aelhkesimmrbg59oahtjsg-on.drv.tw/Quiz/" target="_blank">Click to attempt Quiz</a></button>
  </div>
+ 
     
 <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/22f6733824.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/22f6733824.js" crossorigin="anonymous"></script>
 </body>
 </html>
