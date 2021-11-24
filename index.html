@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideal Gas</title>
-    <link href="/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Barlow:wght@100&display=swap"
     rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Barlow:wght@100&family=Bellefair&family=Manjari:wght@100&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="/images/icons/icons8-chemistry-49.png" type="image">    
+    <link rel="icon" href="images/icons/icons8-chemistry-49.png" type="image">    
  </head>
 <body>
     <header>
@@ -60,7 +60,7 @@
                     class="mwe-math-fallback-image-inline" aria-hidden="true"
                     style="vertical-align: -1.838ex; width:7.467ex; height:5.176ex;"
                     alt="{\displaystyle V\propto {\frac {1}{P}}}"></span>;</li>
-        <li><a href="/images/charles law.png" title="Charles's law">Charles's law</a>: <span class="mwe-math-element"><span
+        <li><a href="images/charles law.png" title="Charles's law">Charles's law</a>: <span class="mwe-math-element"><span
                     class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math
                         xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V\propto T}">
                         <semantics>
@@ -80,7 +80,7 @@
                     class="mwe-math-fallback-image-inline" aria-hidden="true"
                     style="vertical-align: -0.338ex; width:6.522ex; height:2.176ex;"
                     alt="{\displaystyle V\propto T}"></span>;</li>
-        <li><a href="/images/avogadros-law-graph-volume-mole.png" title="Avogadro's law">Avogadro's law</a>: <span class="mwe-math-element"><span
+        <li><a href="images/avogadros-law-graph-volume-mole.png" title="Avogadro's law">Avogadro's law</a>: <span class="mwe-math-element"><span
                     class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math
                         xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle V\propto n}">
                         <semantics>
@@ -194,47 +194,47 @@
         <tr>
             <td>
                 <form method="post" action="/cgi-bin/gaslaws.pl">
-                    <div class=""ideal-unknown><strong>Select the unknown variable:</strong>
-                    <input type="radio" name="solvefor" value="pressure" />Pressure
-                    <input type="radio" name="solvefor" value="volume" />Volume
-                    <input type="radio" name="solvefor" value="moles" /> Moles
-                    <input type="radio" name="solvefor" value="temperature" checked />Temperature
+                    <div class="ideal-unknown"  id="Unknown"><strong>Select the unknown variable:</strong>
+                    <input type="radio" name="solvefor" value="pressure" id="P"/>Pressure
+                    <input type="radio" name="solvefor" value="volume" id="V"/>Volume
+                    <input type="radio" name="solvefor" value="moles" id="M"/> Moles
+                    <input type="radio" name="solvefor" value="temperature"  id="T"/>Temperature
                     </div>
                     
                     <div class="ideal-known"><strong>Enter known values, and choose the appropriate unit:</strong>
                     <table>
                         <tr >
                             <td>P: &nbsp;</td>
-                            <td><input type="text" name="pressure_value" size="10" /></td>
-                            <td><input type="radio" value="Pa" name="pressurein" checked />Pa
-                                <input type="radio" value="atm" name="pressurein" />atm
-                                <input type="radio" value="bar" name="pressurein" />bar
-                                <input type="radio" value="mmHg" name="pressurein" />mm Hg
+                            <td><input type="text" name="pressure_value" size="10" id="Pressure"/></td>
+                            <td><input type="radio" value="Pa" name="pressurein" id="pa"/>Pa
+                                <input type="radio" value="atm" name="pressurein" id="atm"/>atm
+                                <input type="radio" value="bar" name="pressurein" id="bar"/>bar
+                                <input type="radio" value="mmHg" name="pressurein" id="mmhg"/>mm Hg
                                 
                             </td>
                             </tr>
                         <tr >
                             <td>V: &nbsp;</td>
-                            <td><input type="text" name="volume_value" size="10" /></td>
-                            <td ><input type="radio" value="m^3" name="volumein" checked />m<sup>3</sup>
-                                <input type="radio" value="cm^3" name="volumein" />cm<sup>3</sup>
-                                <input type="radio" value="L" name="volumein" />L
-                                <input type="radio" value="ft^3" name="volumein" />ft<sup>3</sup>
+                            <td><input type="text" name="volume_value" size="10" id="Volume"/></td>
+                            <td ><input type="radio" value="m^3" name="volumein" id="m"/>m<sup>3</sup>
+                                <input type="radio" value="cm^3" name="volumein" id="cm"/>cm<sup>3</sup>
+                                <input type="radio" value="L" name="volumein" id="l"/>L
+                                <input type="radio" value="ft^3" name="volumein" id="ft"/>ft<sup>3</sup>
                             </td>
                         </tr>
                         <tr >
                             <td>n: &nbsp;</td>
-                            <td><input type="text" name="moles_value" size="10" /></td>
+                            <td><input type="text" name="moles_value" size="10" id="Moles"/></td>
                             <td>moles</td>
                         </tr>
                         <tr >
                             <td>T: &nbsp;</td>
-                            <td><input type="text" name="temperature_value" size="10"></td>
+                            <td><input type="text" name="temperature_value" size="10" id="Temp"></td>
                             <td >
-                                <input type="radio" value="C" name="temperaturein" checked />&#176; C
-                                <input type="radio" value="F" name="temperaturein" />&#176; F
-                                <input type="radio" value="K" name="temperaturein" />K
-                                <input type="radio" value="R" name="temperaturein" />&#176; R
+                                <input type="radio" value="C" name="temperaturein" id="C"/>&#176; C
+                                <input type="radio" value="F" name="temperaturein" id="F"/>&#176; F
+                                <input type="radio" value="K" name="temperaturein" id="K"/>K
+                                <input type="radio" value="R" name="temperaturein" id="R"/>&#176; R
                             </td>
                         </tr>
                         </div>
@@ -242,15 +242,19 @@
                     <div class="ideal-button"><strong>Calculate the final Answer :</strong>
                   
                     
-                    <button type="button">Calculate</button>
-                    <button type="reset">Clear</button></div>
+                    <button type="button" id="CalcBtn">Calculate</button>
+                    <button type="reset" id="ClrBtn">Clear</button></div>
+                    <div id="finalResult">
+                        
+                    </div>
                 </form>
             </td>
         </tr>
     </table>
  </div>
-   
+ 
+ 
     
-
+<script src="index.js"></script>
 </body>
 </html>
