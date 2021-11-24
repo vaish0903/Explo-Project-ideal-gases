@@ -92,3 +92,7 @@ button {
 .ideal-button {
   padding: 3rem;
 }
+#finalResult h3{
+    text-align: center;
+    margin: 12px;
+  }
